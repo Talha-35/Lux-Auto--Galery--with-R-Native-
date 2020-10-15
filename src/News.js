@@ -62,13 +62,17 @@ const News = () => {
       <View>
         <FlatList
           keyExtractor={(item, index) => item.id.toString()}
+          // yukarıdaki ezbere de yazılabilir. liste de ayrıştırma yapabilmek için tek benzersiz bir değer girmek laazım. o yüzden genelde listelere ıd numarası verilir.
           data={myData}
           renderItem={renderMyData}
           numColumns={2}
+          // bu şekilde kolon sayısı ekleyebeilriiz. ama width ayarlamak gerekiyor
           ListHeaderComponent={Banner}
           ListFooterComponent={Footer}
         />
       </View>
+      {/* <Text>selam</Text>
+      <Footer /> */}
     </SafeAreaView>
   );
 };

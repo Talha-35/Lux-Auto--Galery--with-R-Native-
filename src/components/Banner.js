@@ -83,6 +83,9 @@ const Banner = () => {
       </View>
 
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+         {/* burdaki horizantal kaymayı yan yapar. 
+        diğer indicator : bu da alt ve yanda bulunan sağa sola hareket ettirme çubuğunuu kaybeder */}
+
         {banner_data.map((item) => {
           return (
             <View style={styles.container}>
